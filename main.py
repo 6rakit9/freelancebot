@@ -6,7 +6,10 @@ import mysql.connector
 from mysql.connector import Error
 from datetime import datetime, timedelta
 from data import token, adminId, bd_password
+from dotenv import load_dotenv
+import os
 
+load_dotenv()  # Загружает переменные из .env
 # Настройки базы данных
 DB_CONFIG = {
     'host': 'localhost',
